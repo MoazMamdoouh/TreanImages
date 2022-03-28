@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Trend Images</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_description">Help marketing team to save time and money </string>
+    <string name="login_guest">Continue as a guest </string>
+    <string name="create_account">Do not have an account ? create one</string>
+    <string name="forget_password">Forget Password?</string>
+
 </resources>
