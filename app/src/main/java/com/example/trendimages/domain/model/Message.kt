@@ -6,6 +6,6 @@ data class Message(
     val email: String,
     val message: String,
     val sid: String,
-    val success_key: Int,
+    var success_key: Int,
     val username: String
 )

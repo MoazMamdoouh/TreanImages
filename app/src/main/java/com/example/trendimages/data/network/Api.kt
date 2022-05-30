@@ -10,4 +10,3 @@ interface Api {
        @Body loginRequest : LoginRequest
     ): Response<LoginResponse>
 }
-//  Mosraw-1062000b

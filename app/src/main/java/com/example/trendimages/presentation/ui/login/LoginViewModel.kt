@@ -21,18 +21,22 @@ class LoginViewModel(
     fun onLoginClicked(loginRequest: LoginRequest) {
         Log.e("sdsdsdsd", "onLoginClicked: " )
         viewModelScope.launch {
+
             when (val response = loginUseCase.requestLoginCredentials(loginRequest)) {
+
                 is Resource.Success -> {
                     _observeLoginSuccess.value = response.data!!
-                    Log.e("sdsdsdsd", "SUCCESS: " )
+                    Log.e("sdsdsdsd", "SUCCESS:  ")
 
                 }
                 is Resource.Failed -> {
                     _observeLoginError.value = true
-                    Log.e("sdsdsdsd", "ERROR: ${response.message} " )
+                    Log.e("sdsdsdsd", "ERROR: ${response.message} ")
 
                 }
             }
+
+
         }
     }
 

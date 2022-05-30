@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.trendimages.R
 import com.example.trendimages.databinding.FragmentLoginBinding
 import com.example.trendimages.domain.model.LoginRequest
+import com.example.trendimages.domain.model.LoginResponse
 import java.util.*
 
 class LoginFragment : Fragment() {
@@ -33,8 +34,10 @@ class LoginFragment : Fragment() {
     private fun observeLoginData() {
         loginViewModel.observeLoginSuccess.observe(
             viewLifecycleOwner, androidx.lifecycle.Observer {
+
              Toast.makeText(context , "success" , Toast.LENGTH_LONG).show()
-            })
+            }
+        )
 
     }
     private fun observeError()

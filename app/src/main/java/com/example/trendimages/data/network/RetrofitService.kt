@@ -1,4 +1,4 @@
-package com.example.trendimages.data.network
+   package com.example.trendimages.data.network
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -25,7 +25,7 @@ object RetrofitService {
     private fun provideRetrofit(): Retrofit = Retrofit
         .Builder()
         .addConverterFactory(GsonConverterFactory.create())
-        .baseUrl(" http://app.betrend.live:81/api/method/")
+        .baseUrl(" http://app.betrend.live:8001/api/method/")
         .client(providesOkHttpClient(providesHttpLoggingInterceptor()))
         .build()
 

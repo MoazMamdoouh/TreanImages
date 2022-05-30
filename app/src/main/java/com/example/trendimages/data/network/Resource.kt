@@ -11,4 +11,4 @@ sealed class Resource<T>(
     class Loading<T> : Resource<T>()
     class NoConnection<T> : Resource<T>()
     class HideLoading<T> : Resource<T>()
-}
+}                                   

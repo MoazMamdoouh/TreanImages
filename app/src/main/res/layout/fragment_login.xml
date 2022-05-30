@@ -18,7 +18,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/back_ground"
         tools:context=".presentation.ui.login.LoginFragment">
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="128dp"
             android:layout_height="128dp"
             android:id="@+id/iv_login_logo"
@@ -41,22 +41,24 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         />
-     <EditText
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:id="@+id/ed_login_email"
-         app:layout_constraintTop_toBottomOf="@+id/tv_login"
-         app:layout_constraintRight_toRightOf="parent"
-         app:layout_constraintLeft_toLeftOf="parent"
-         android:text="@={login_object.loginUserName}"
-         android:layout_marginTop="16dp"
-         android:layout_marginLeft="32dp"
-         android:layout_marginRight="32dp"
-         android:hint="User Name"
-         android:inputType="text"
-         android:lines="1"
-         />
-        <EditText
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ed_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:hint="User Name"
+            android:inputType="text"
+            android:lines="1"
+            android:text="@={login_object.loginUserName}"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ed_login_password"

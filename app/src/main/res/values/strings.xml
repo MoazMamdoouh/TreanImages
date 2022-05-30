@@ -6,5 +6,13 @@
     <string name="login_guest">Continue as a guest </string>
     <string name="create_account">Do not have an account ? create one</string>
     <string name="forget_password">Forget Password?</string>
+    <string name="popularity">popularity</string>
+    <string name="popularity_description">predict the popularity of images</string>
+    <string name="recommendation">Recommend</string>
+    <string name="recommendation_description">recommendation system to recommend images with high resolutions</string>
+    <string name="converting">Converting</string>
+    <string name="converting_description">converting images from normal images to creative images for social media</string>
+    <string name="sharing">Sharing</string>
+    <string name="sharing_description">share in multi-platforms with one click right now or with scheduling</string>
 
 </resources>

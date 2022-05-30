@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1435" />
+        <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/drawable/card_shape.xml" value="0.1555" />
+        <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/drawable/lock.xml" value="0.1435" />
         <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/drawable/login_background.xml" value="0.156" />
+        <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/drawable/person.xml" value="0.1435" />
         <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/drawable/sing_up_background.xml" value="0.156" />
         <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/layout/fragment_home.xml" value="0.16983695652173914" />
         <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/layout/fragment_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/layout/fragment_registere_activity.xml" value="0.11911231884057971" />
+        <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/layout/fragment_splash_screen.xml" value="0.11911231884057971" />
         <entry key="..\:/Users/moaz/AndroidStudioProjects/TrendImages/app/src/main/res/layout/fragment_welcome.xml" value="0.17074275362318841" />
       </map>
     </option>
