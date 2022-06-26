@@ -6,7 +6,7 @@
     <data>
         <variable
             name="login_object"
-            type="com.example.trendimages.domain.model.LoginRequest" />
+            type="com.example.trendimages.domain.model.login.LoginRequest" />
         <variable
             name="loginListener"
             type="com.example.trendimages.presentation.ui.login.LoginViewModel" />

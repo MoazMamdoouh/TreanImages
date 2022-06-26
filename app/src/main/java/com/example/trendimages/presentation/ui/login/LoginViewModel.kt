@@ -6,9 +6,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.trendimages.data.network.Resource
-import com.example.trendimages.domain.model.LoginResponse
-import com.example.trendimages.domain.model.LoginRequest
-import com.example.trendimages.domain.use_case.LoginUseCase
+import com.example.trendimages.domain.model.login.LoginResponse
+import com.example.trendimages.domain.model.login.LoginRequest
+import com.example.trendimages.domain.use_case.login_use_case.LoginUseCase
 import kotlinx.coroutines.launch
 
 class LoginViewModel(
@@ -20,6 +20,7 @@ class LoginViewModel(
 
     fun onLoginClicked(loginRequest: LoginRequest) {
         Log.e("sdsdsdsd", "onLoginClicked: " )
+
         viewModelScope.launch {
 
             when (val response = loginUseCase.requestLoginCredentials(loginRequest)) {

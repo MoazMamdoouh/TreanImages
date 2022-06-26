@@ -1,4 +1,4 @@
-package com.example.trendimages.domain.model
+package com.example.trendimages.domain.model.login
 
 import retrofit2.Response
 

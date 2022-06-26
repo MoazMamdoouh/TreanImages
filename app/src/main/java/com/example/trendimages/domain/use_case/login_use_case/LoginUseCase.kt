@@ -1,9 +1,9 @@
-package com.example.trendimages.domain.use_case
+package com.example.trendimages.domain.use_case.login_use_case
 
 import com.example.trendimages.data.repository.BaseRepository
-import com.example.trendimages.data.repository.LoginRepository
-import com.example.trendimages.domain.model.LoginGetWay
-import com.example.trendimages.domain.model.LoginRequest
+import com.example.trendimages.data.repository.login_repo.LoginRepository
+import com.example.trendimages.domain.model.login.LoginGetWay
+import com.example.trendimages.domain.model.login.LoginRequest
 
 class LoginUseCase(
     private val loginRepository: LoginGetWay = LoginRepository()

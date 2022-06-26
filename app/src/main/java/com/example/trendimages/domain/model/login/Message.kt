@@ -1,4 +1,4 @@
-package com.example.trendimages.domain.model
+package com.example.trendimages.domain.model.login
 
 data class Message(
     val api_key: String,

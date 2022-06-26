@@ -1,4 +1,4 @@
-package com.example.trendimages.domain.model
+package com.example.trendimages.domain.model.login
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import com.example.trendimages.BR

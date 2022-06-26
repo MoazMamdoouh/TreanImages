@@ -10,12 +10,12 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.trendimages.R
 import com.example.trendimages.databinding.FragmentLoginBinding
-import com.example.trendimages.domain.model.LoginRequest
-import com.example.trendimages.domain.model.LoginResponse
-import java.util.*
+import com.example.trendimages.domain.model.login.LoginRequest
+import com.example.trendimages.domain.model.login.LoginResponse
 
 class LoginFragment : Fragment() {
     private val loginViewModel: LoginViewModel by viewModels()
+   // private lateinit var response : LoginResponse
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,6 +36,8 @@ class LoginFragment : Fragment() {
             viewLifecycleOwner, androidx.lifecycle.Observer {
 
              Toast.makeText(context , "success" , Toast.LENGTH_LONG).show()
+                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+
             }
         )
 

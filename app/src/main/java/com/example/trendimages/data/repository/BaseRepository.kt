@@ -1,10 +1,7 @@
 package com.example.trendimages.data.repository
 
-import android.util.Log
+
 import com.example.trendimages.data.network.Resource
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import retrofit2.HttpException
 import retrofit2.Response
 import java.lang.Exception
 

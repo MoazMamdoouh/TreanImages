@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="search_request_object"
+            type="com.example.trendimages.domain.model.search.SearchRequest"
+            />
+
+        <variable
+            name="search_request_listner"
+            type="com.example.trendimages.presentation.ui.search.SearchViewModel"
+            />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_ground"
+        >
+
+        <RelativeLayout
+            android:id="@+id/toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/babyBlue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_search_search_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/iv_search_search"
+                android:backgroundTint="@color/white"
+                android:hint="@string/search"
+                android:inputType="text"
+                android:lines="1"
+                android:text="@={search_request_object.searchText}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_search_search"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_toStartOf="@id/tv_search_num_of_images"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="@{()->search_request_listner.onSearchClick(search_request_object)}"
+                android:src="@drawable/searchicon" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/tv_search_num_of_images"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:hint="@string/number"
+                android:textColor="@color/white"
+                android:text="@={``+search_request_object.numberOfImages}"
+                android:inputType="number"
+                android:lines="1"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_search"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+           >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="3"
+                tools:listitem="@layout/item_search_images" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
