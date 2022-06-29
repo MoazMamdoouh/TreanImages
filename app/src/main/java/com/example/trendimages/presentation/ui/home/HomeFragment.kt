@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.trendimages.R
@@ -26,7 +27,10 @@ class HomeFragment : Fragment() , OnClickedListener{
         savedInstanceState: Bundle?
     ): View {
          binding  = FragmentHomeBinding.inflate(inflater)
+        //functions call
         initiateRecyclerView()
+
+
         return binding.root
     }
 
@@ -72,6 +76,7 @@ class HomeFragment : Fragment() , OnClickedListener{
             Toast.makeText(requireContext(), "popularity", Toast.LENGTH_SHORT).show()
         }
         else if(imagesList == R.drawable.socialtree) {
+            findNavController().navigate(R.id.action_homeFragment_to_shareFragment)
             Toast.makeText(requireContext(), "share", Toast.LENGTH_SHORT).show()
         }
     }

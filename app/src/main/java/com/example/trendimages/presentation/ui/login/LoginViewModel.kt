@@ -1,6 +1,8 @@
 package com.example.trendimages.presentation.ui.login
 
+
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -18,6 +20,8 @@ class LoginViewModel(
     private val _observeLoginSuccess = MutableLiveData<LoginResponse>()
     private val _observeLoginError = MutableLiveData<Boolean>()
 
+
+
     fun onLoginClicked(loginRequest: LoginRequest) {
         Log.e("sdsdsdsd", "onLoginClicked: " )
 
@@ -26,6 +30,7 @@ class LoginViewModel(
             when (val response = loginUseCase.requestLoginCredentials(loginRequest)) {
 
                 is Resource.Success -> {
+
                     _observeLoginSuccess.value = response.data!!
                     Log.e("sdsdsdsd", "SUCCESS:  ")
 
@@ -37,6 +42,22 @@ class LoginViewModel(
                 }
             }
 
+
+        }
+    }
+
+    private fun validation(userName : String , password : String)
+    {
+        if(userName.isEmpty())
+        {
+
+        }
+        else if (password.isEmpty())
+        {
+
+        }
+        else if (userName.isEmpty() && password.isEmpty())
+        {
 
         }
     }

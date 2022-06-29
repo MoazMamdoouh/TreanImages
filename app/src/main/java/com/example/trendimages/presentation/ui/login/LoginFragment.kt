@@ -15,7 +15,8 @@ import com.example.trendimages.domain.model.login.LoginResponse
 
 class LoginFragment : Fragment() {
     private val loginViewModel: LoginViewModel by viewModels()
-   // private lateinit var response : LoginResponse
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +29,8 @@ class LoginFragment : Fragment() {
 
         observeLoginData()
         observeError()
+
+
         return binding.root
     }
 
@@ -50,5 +53,6 @@ class LoginFragment : Fragment() {
             }
         )
     }
+
 
 }

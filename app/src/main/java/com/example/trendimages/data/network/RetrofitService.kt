@@ -15,9 +15,9 @@ object RetrofitService {
     private fun providesOkHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor)
             : OkHttpClient = OkHttpClient
         .Builder()
-        .connectTimeout(5, TimeUnit.SECONDS)
-        .readTimeout(5, TimeUnit.SECONDS)
-        .writeTimeout(5, TimeUnit.SECONDS)
+        .connectTimeout(30, TimeUnit.SECONDS)
+        .readTimeout(30, TimeUnit.SECONDS)
+        .writeTimeout(30, TimeUnit.SECONDS)
         .retryOnConnectionFailure(false)
         .addInterceptor(httpLoggingInterceptor)
         .build()
@@ -25,7 +25,7 @@ object RetrofitService {
     private fun provideRetrofit(): Retrofit = Retrofit
         .Builder()
         .addConverterFactory(GsonConverterFactory.create())
-        .baseUrl(" http://app.betrend.live:8001/api/method/")
+        .baseUrl(" https://app.betrend.live/api/method/")
         .client(providesOkHttpClient(providesHttpLoggingInterceptor()))
         .build()
 

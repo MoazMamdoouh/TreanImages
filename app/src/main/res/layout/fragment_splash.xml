@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_ground"
+        tools:context="com.example.trendimages.presentation.ui.splash.SplashFragment">
+
+        <ImageView
+            android:id="@+id/splashScreenLogo"
+            android:layout_width="157dp"
+            android:layout_height="153dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_splashScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splashScreenLogo"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Trend semantic images"
+            android:textAlignment="center"
+            android:textColor="@color/babyBlue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progress_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_splashScreen"
+            android:layout_marginTop="20dp"
+            android:indeterminateTint="@color/babyBlue"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp" />
+
+
+    </RelativeLayout>
+</layout>
+

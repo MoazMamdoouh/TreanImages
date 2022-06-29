@@ -52,10 +52,10 @@ class SearchFragment : Fragment() {
         )
     }
    private fun initializeImageList(searchImage: SearchResponse){
-       binding.rvSearch.layoutManager = GridLayoutManager(requireContext() , 3)
-       binding.rvSearch.setHasFixedSize(true)
-       searchAdapter = SearchAdapter(searchImage)
-       binding.rvSearch.adapter = searchAdapter
+//       binding.rvSearch.layoutManager = GridLayoutManager(requireContext() , 3)
+//       binding.rvSearch.setHasFixedSize(true)
+//       searchAdapter = SearchAdapter(searchImage)
+//       binding.rvSearch.adapter = searchAdapter
 
    }
  }

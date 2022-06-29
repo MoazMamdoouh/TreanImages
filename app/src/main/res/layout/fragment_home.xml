@@ -22,7 +22,19 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:src="@drawable/logo" />
+       <com.airbnb.lottie.LottieAnimationView
+           android:layout_width="@dimen/_150sdp"
+           android:layout_height="wrap_content"
+           android:id="@+id/lf_home_right_arrow"
+           app:layout_constraintTop_toBottomOf="@id/iv_home_logo"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toTopOf="@id/rv_home_horizontal"
+           android:layout_margin="@dimen/_16sdp"
+           app:lottie_rawRes="@raw/rightarrow"
+           app:lottie_loop="true"
+           app:lottie_autoPlay="true"
 
+           />
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,6 +42,6 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_home_logo"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_margin="@dimen/_16sdp" />
+            android:layout_margin="@dimen/_32sdp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
