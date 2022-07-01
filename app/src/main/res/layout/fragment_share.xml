@@ -4,6 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="imageUrl"
+            type="String" />
 
     </data>
 
@@ -29,8 +32,9 @@
     app:layout_constraintTop_toBottomOf="@id/iv_share_logo"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
+    app:imageUrl="@{imageUrl}"
     android:src="@drawable/upload_image"
-    android:layout_margin="@dimen/_8sdp"
+    android:layout_margin="@dimen/_32sdp"
     />
         <Button
             android:layout_width="wrap_content"
@@ -39,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@id/iv_share_upload_image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_margin="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:hint="share"
             android:textColorHint="@color/white"
             />

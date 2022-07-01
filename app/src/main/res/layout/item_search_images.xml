@@ -11,7 +11,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:padding="2dp">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_item_search_image"
@@ -19,6 +21,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_width="128dp"
             android:layout_height="128dp"
+            android:scaleType="fitXY"
             app:imageUrl="@{imageUrl}"
             tools:listitem="@layout/item_search_images"
             android:src="@drawable/person"

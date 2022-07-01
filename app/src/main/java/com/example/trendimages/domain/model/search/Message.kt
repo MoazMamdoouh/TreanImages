@@ -1,5 +1,5 @@
 package com.example.trendimages.domain.model.search
 
-data class SearchResponse(
-    val message: Message
+data class Message(
+    val images: List<String>
 )
