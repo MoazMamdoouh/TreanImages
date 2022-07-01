@@ -14,7 +14,6 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.navArgs
 import com.example.trendimages.databinding.FragmentPredictBinding
 import com.example.trendimages.domain.model.predict.PredictRequest
-
 class PredictFragment : Fragment() {
 
 
